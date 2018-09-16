@@ -25,14 +25,8 @@ public class PseudoCodes {
 		JFrame firstFrame= new JFrame("Employee Management System");
 		//set the close operation
 		firstFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		//Creating Menu Bar
-	//	menuBar= new JMenuBar();
-		
-		
-		
 		//Setting Up ContentPane (Panel)
 		RootContentPane.initialize();
-		
 		//Connecting to DB
 		EmployeeDatabase.connect();
 		
@@ -58,51 +52,19 @@ public class PseudoCodes {
 		RootContentPane.cLabel.gridy=3;
 		RootContentPane.addTextField("Employee ID: ","Enter Employee ID", true,10,RootContentPane.payslipPanel);
 		RootContentPane.addPrintButton();
-		
-		
-	   // RootContentPane.addButton("Add",true);
-	 //   RootContentPane.addButton("PrintPayStub",true);
 		//Adding Components to Frame
-	//	firstFrame.setJMenuBar(menuBar);
+
 		firstFrame.setLayout(new BoxLayout(firstFrame.getContentPane(),BoxLayout.X_AXIS));
-	//	firstFrame.setPreferredSize(new Dimension(760,480));
+
 		
 		firstFrame.add(RootContentPane.rootContentPanel);
 		firstFrame.getContentPane().add(RootContentPane.payslipPanel);
 		firstFrame.setExtendedState(JFrame.MAXIMIZED_BOTH);
-		//firstFrame.setResizable(false);
+		
 		firstFrame.pack();
 		firstFrame.setLocationRelativeTo(null);
-		
-		
 		// setting the visibility 
 		RootContentPane.createComponentMap();
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		firstFrame.setVisible(true);
-
+	        firstFrame.setVisible(true);
 	}
-	
-
-	
-
 }
