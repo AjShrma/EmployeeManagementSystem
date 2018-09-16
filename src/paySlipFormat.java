@@ -15,12 +15,7 @@ public class paySlipFormat {
 		cPaySlip.gridx=4;
 		cPaySlip.gridy=4;
 		cPaySlip.anchor=GridBagConstraints.ABOVE_BASELINE_LEADING;
-		
-		
-		
-	
-	
-		//cPaySlip.anchor=GridBagConstraints.BELOW_BASELINE_LEADING;
+
 		String FullName=data.get(2)+"\t"+data.get(3);
 		RootContentPane.payslipPanel.add(new JLabel(FullName),cPaySlip);
 	
