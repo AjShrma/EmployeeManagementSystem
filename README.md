@@ -6,3 +6,5 @@ This is a mini-project exercised during the college.
 ## Project details
 - Eclipse is used to build the code files. 
 - Simple Implemention of Object Oriented Concepts.
+- Implementation of JComponent, HashMap & GridBag Layout in Java.
+
